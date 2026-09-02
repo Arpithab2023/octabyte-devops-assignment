@@ -9,8 +9,7 @@ TABLE="octabyte-tf-locks"
 
 aws s3api create-bucket \
   --bucket "$BUCKET" \
-  --region "$REGION" \
-  --create-bucket-configuration LocationConstraint="$REGION"
+  --region "$REGION"
 
 aws s3api put-bucket-versioning \
   --bucket "$BUCKET" \

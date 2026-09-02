@@ -16,7 +16,7 @@ terraform {
   # Create the bucket + table once, manually or via a bootstrap script,
   # BEFORE running `terraform init` (backend config can't be templated with variables).
   backend "s3" {
-    bucket         = "octabyte-tfstate-<UNIQUE_SUFFIX>"
+    bucket         = "octabyte-tfstate-47579"
     key            = "app/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "octabyte-tf-locks"

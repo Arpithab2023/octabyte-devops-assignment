@@ -116,7 +116,7 @@ variable "db_multi_az" {
 variable "db_backup_retention_days" {
   description = "Automated backup retention period"
   type        = number
-  default     = 7
+  default     = 1
 }
 
 variable "alert_email" {

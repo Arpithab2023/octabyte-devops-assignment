@@ -1,4 +1,4 @@
-name: CI/CD
+  name: CI/CD
 
 on:
   pull_request:
@@ -12,6 +12,10 @@ env:
   ECR_REPOSITORY: octabyte-app
   ECS_CLUSTER: octabyte-cluster
   ECS_SERVICE: octabyte-service
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   # ---------- Runs on every PR ----------
